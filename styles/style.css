@@ -79,6 +79,7 @@ body {
     .navbar h2 {
         margin-bottom: 10px;
         text-align: center;
+        font-size: 35px;
     }
     .navbar ul {
         flex-direction: column;
@@ -91,6 +92,9 @@ body {
 }
 /*---------------- banner (responsive) ----------------*/
 @media screen and (max-width: 576px) {
+    .banner h1 {
+        font-size: 40px;
+    }
     .banner-img {
         width: 100%;
     }
