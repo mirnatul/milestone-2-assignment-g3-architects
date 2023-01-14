@@ -176,4 +176,7 @@ body {
     .quick-list .text-container {
         text-align: center;
     }
+    .quick-list h2 {
+        font-size: 40px;
+    }
 }
