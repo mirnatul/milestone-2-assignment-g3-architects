@@ -1,0 +1,97 @@
+/*---------------- importing font family ----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+/*---------------- navbar and banner ----------------*/
+.navbar-and-banner {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+/*---------------- navbar ----------------*/
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 200px;
+}
+.navbar h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+.navbar ul {
+    padding: 0;
+    display: flex;
+}
+.navbar li {
+    list-style: none;
+    margin-left: 20px;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #424242;
+}
+/*---------------- navbar (responsive) ----------------*/
+.banner {
+    text-align: center;
+}
+.banner h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #131313;
+    margin: 20px auto;
+}
+.banner p {
+    color: #727272;
+    margin-bottom: 32px;
+    max-width: 550px;
+    margin: 0 auto 32px;
+}
+.banner button {
+    background-color: #FF900E;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 8px;
+}
+.banner-img {
+    width: 1100px;
+    margin: 50px auto;
+    padding-bottom: 40px;
+}
+.banner-img img {
+    width: 100%;
+}
+
+
+/*---------------- navbar (responsive) ----------------*/
+@media screen and (max-width: 576px) {
+    .navbar {
+        margin: 0 20px;
+        flex-direction: column;
+    }
+    .navbar h2 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .navbar li {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+/*---------------- banner (responsive) ----------------*/
+@media screen and (max-width: 576px) {
+    .banner-img {
+        width: 100%;
+    }
+}
