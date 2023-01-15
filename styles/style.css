@@ -156,7 +156,7 @@ body {
 
 .features .text-container div {
     box-shadow: 2px 2px 10px gray;
-    padding: 5px 10px;
+    padding: 5px 20px;
     margin-bottom: 18px;
     border-radius: 8px;
 }
@@ -217,12 +217,25 @@ body {
     border: 2px solid #FF900E;
     border-radius: 8px;
     padding: 15px 25px;
+    transition: transform 0.5s ease-in;
+}
+
+.block-container div:hover {
+    background-color: #ffcf7c;
+    transform: scale(1.05);
+    color: #FFFFFF;
+}
+
+.block-container div:hover h2,
+.block-container div:hover p {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px black;
 }
 
 .block-container h2 {
     font-size: 40px;
     font-weight: 600;
-    color: #424242;
+    /* color: #424242; */
 }
 
 .block-container p {
