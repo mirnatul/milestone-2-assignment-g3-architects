@@ -165,7 +165,6 @@ body {
     text-align: center;
     position: relative;
     top: -100px;
-    left: 140px;
 }
 
 .features-top-parent button {
@@ -174,6 +173,7 @@ body {
     color: #FFFFFF;
     padding: 25px 22px;
     border-radius: 8px;
+    margin-left: 200px;
 }
 
 .button-container .first-text {
@@ -185,9 +185,43 @@ body {
     font-size: 18px;
     font-weight: 500;
 }
-
-
-
+/*---------------- main - facts ----------------*/
+.facts {
+    margin: 0 200px 10px;
+}
+.facts h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 24px;
+}
+.facts .facts-description {
+    line-height: 26px;
+    color: #727272;
+}
+.block-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding: 0 30px;
+    margin-top: 80px;
+}
+.block-container div{
+    text-align: center;
+    border: 2px solid #FF900E;
+    border-radius: 8px;
+    padding: 15px 25px;
+}
+.block-container h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #424242;
+}
+.block-container p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #727272;
+}
 
 /*---------------- navbar (responsive) ----------------*/
 @media screen and (max-width: 576px) {
@@ -264,6 +298,27 @@ body {
 
     .features-top-parent .button-container {
         top: 0px;
-        left: 0px;
+    }
+    .features-top-parent button {
+        margin-left: 0;
+    }
+}
+/*---------------- main - facts (responsive) ----------------*/
+@media screen and (max-width: 576px) {
+    .facts {
+        text-align: center;
+        margin: 80px 20px 10px;
+    }
+    .block-container {
+        display: grid;
+        grid-template-columns: repeat(1, 230px);
+        gap: 40px;
+        justify-content: center;
+    }
+    .block-container div{
+        text-align: center;
+        border: 2px solid #FF900E;
+        border-radius: 8px;
+        padding: 15px 20px;
     }
 }
