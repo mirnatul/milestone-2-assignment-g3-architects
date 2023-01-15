@@ -33,7 +33,7 @@ body {
 
 .navbar li {
     list-style: none;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .navbar a {
@@ -185,43 +185,111 @@ body {
     font-size: 18px;
     font-weight: 500;
 }
+
 /*---------------- main - facts ----------------*/
 .facts {
     margin: 0 200px 10px;
 }
+
 .facts h2 {
     font-size: 45px;
     font-weight: 700;
     color: #131313;
     margin-bottom: 24px;
 }
+
 .facts .facts-description {
+    max-width: 550px;
     line-height: 26px;
     color: #727272;
 }
+
 .block-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 80px;
     padding: 0 30px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
-.block-container div{
+
+.block-container div {
     text-align: center;
     border: 2px solid #FF900E;
     border-radius: 8px;
     padding: 15px 25px;
 }
+
 .block-container h2 {
     font-size: 40px;
     font-weight: 600;
     color: #424242;
 }
+
 .block-container p {
     font-size: 18px;
     font-weight: 600;
     color: #727272;
 }
+
+/*---------------- main - projects (extra block) ----------------*/
+.projects {
+    margin: 100px 200px;
+    text-align: center;
+}
+
+.projects-container {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.projects-container div {
+    flex: 1;
+}
+
+.projects img {
+    width: 100%;
+}
+
+.projects h2,
+.sponsors h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+    margin-bottom: 50px;
+
+}
+
+.projects-container p {
+    line-height: 26px;
+    color: #727272;
+}
+
+/*---------------- main - sponsors ----------------*/
+.sponsors {
+    margin: 80px 200px 10px;
+    text-align: center;
+}
+
+.brand-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: grayscale(100%);
+}
+
+.sponsors h2 {
+    margin-bottom: 24px;
+}
+
+.sponsors p {
+    line-height: 26px;
+    max-width: 550px;
+    color: #727272;
+    margin-bottom: 50px;
+}
+
 
 /*---------------- navbar (responsive) ----------------*/
 @media screen and (max-width: 576px) {
@@ -246,6 +314,7 @@ body {
         text-align: center;
     }
 }
+
 
 /*---------------- banner (responsive) ----------------*/
 @media screen and (max-width: 576px) {
@@ -282,6 +351,7 @@ body {
     }
 }
 
+
 /*---------------- main - features (responsive) ----------------*/
 @media screen and (max-width: 576px) {
     .features {
@@ -299,16 +369,19 @@ body {
     .features-top-parent .button-container {
         top: 0px;
     }
+
     .features-top-parent button {
         margin-left: 0;
     }
 }
+
 /*---------------- main - facts (responsive) ----------------*/
 @media screen and (max-width: 576px) {
     .facts {
         text-align: center;
         margin: 80px 20px 10px;
     }
+
     .block-container {
         display: grid;
         grid-template-columns: repeat(1, 230px);
@@ -316,10 +389,36 @@ body {
         justify-content: center;
         margin-top: 40px;
     }
-    .block-container div{
+
+    .block-container div {
         text-align: center;
         border: 2px solid #FF900E;
         border-radius: 8px;
         padding: 15px 20px;
+    }
+}
+
+/*---------------- main - projects (extra block) (responsive) ----------------*/
+@media screen and (max-width: 576px) {
+    .projects {
+        margin: 80px 20px 10px;
+        text-align: center;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/*---------------- main - sponsors (responsive) ----------------*/
+@media screen and (max-width: 576px) {
+    .sponsors {
+        margin: 80px 20px 10px;
+    }
+
+    .brand-container {
+        flex-direction: column;
+        gap: 35px;
     }
 }
