@@ -312,8 +312,9 @@ body {
     .block-container {
         display: grid;
         grid-template-columns: repeat(1, 230px);
-        gap: 40px;
+        gap: 30px;
         justify-content: center;
+        margin-top: 40px;
     }
     .block-container div{
         text-align: center;
